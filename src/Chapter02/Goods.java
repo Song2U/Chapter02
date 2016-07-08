@@ -18,7 +18,10 @@ public class Goods { // Default 접근자
 		this.countStock = countStock;
 		this.countSold = countSold;
 	}
-
+	public static int getCountOfGoods(){
+		//price=10; ->static 메소드 안에서는 static 변수만 접근 가능하므로 오류 발생
+		return countOfGoods;
+	}
 	public void setName(String n) {
 		name = n;
 	}
@@ -58,6 +61,7 @@ public class Goods { // Default 접근자
 	public void showInfo() {
 		System.out.println("[" + name + ", " + price + "," + "countSold" + countSold);
 	}
-
+	int discountPrice = camera.calcDiscountPrice();
 	Goods goods1 = new Goods("Cannon", 300000, 0, 100);
+	
 }

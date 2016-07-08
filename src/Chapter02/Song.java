@@ -8,6 +8,26 @@ public class Song {
 	private int year;
 	private int track;
 
+	public Song(String artist, String title, String album) {
+		// this.artist = artist;
+		// this.title = title;
+		// this.album = album; //코드가 중복되므로 아래와 같이 줄인다.
+		this(artist, title, album, null, 0, 0);
+	}
+
+	public Song(String artist, String title, String album, String composer, int year, int track) {
+		this.artist = artist; // this : 인스턴스를 가리킴
+		this.title = title;
+		this.album = album;
+		this.composer = composer;
+		this.year = year;
+		this.track = track;
+	}
+
+	public Song() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getTitle() {
 		return title;
 	}

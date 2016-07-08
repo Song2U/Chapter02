@@ -24,5 +24,6 @@ public class GoodsApp {
 		System.out.println(str);
 		
 		System.out.println(camera);
+		System.out.println(Goods.getCountOfGoods());
 	}
 }
