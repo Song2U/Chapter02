@@ -61,7 +61,7 @@ public class Goods { // Default Á¢±ÙÀÚ
 	public void showInfo() {
 		System.out.println("[" + name + ", " + price + "," + "countSold" + countSold);
 	}
-	int discountPrice = camera.calcDiscountPrice();
+	//int discountPrice = camera.calcDiscountPrice();
 	Goods goods1 = new Goods("Cannon", 300000, 0, 100);
 	
 }
